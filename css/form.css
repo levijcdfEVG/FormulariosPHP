@@ -8,14 +8,6 @@ main {
     box-shadow: 1px 1px black; /* Sombra ligera de 1px en ambas direcciones para dar profundidad */
     padding: 50px; /* Espacio interno (relleno) de 50px alrededor del contenido dentro de <main> */
 }
-
-/* Estilo para <fieldset> dentro del <main> */
-main > fieldset {
-    text-align: center; /* Alinea el contenido del <fieldset> al centro */
-    width: 50%; /* Ancho del <fieldset> al 50% de su contenedor padre */
-    margin: auto; /* Centra el <fieldset> horizontalmente dentro del <main> */
-}
-
 /* Estilo para el título <h1> dentro del <main> */
 main > h1 {
     text-align: center; /* Alinea el texto del título en el centro */
@@ -30,12 +22,16 @@ fieldset > input, fieldset > select {
     display: block; /* Hace que cada <input> y <select> se muestren como un bloque independiente, en su propia línea */
     width: 50%; /* El ancho de los campos de entrada es el 50% del contenedor padre (<fieldset>) */
     margin: auto; /* Centra los campos de entrada horizontalmente */
-    text-align: center; /* Alinea el texto dentro del campo de entrada en el centro */
     margin-top: 10px; /* Espacio superior de 10px antes de cada <input> */
     margin-bottom: 10px; /* Espacio inferior de 10px después de cada <input> */
 }
 
+
 /* Estilo específico para el botón con ID "submitButton" */
 #submitButton {
     background-color: tomato; /* Color de fondo del botón de envío en tono rojo tomate */
+}
+
+p{
+    text-align: center;
 }
