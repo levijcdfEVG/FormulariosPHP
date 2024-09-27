@@ -1,0 +1,78 @@
+/* Estilo para el contenedor principal del contenido de la página */
+#pageDescription {
+    font-family: Verdana, Geneva, Tahoma, sans-serif; /* Fuente de texto sans-serif */
+    background-color: white; /* Fondo blanco */
+    border: 1px solid black; /* Borde negro de 1px */
+    margin: 10px; /* Margen alrededor */
+    padding: 5px; /* Espaciado interno de 5px */
+    width: 90%; /* Ancho del 48% del contenedor padre */
+    float: left; /* Flota a la izquierda */
+    border-radius: 10px; /* Bordes redondeados de 10px */
+    box-shadow: 1px 1px black; /* Sombra pequeña para darle relieve */
+}
+
+/* Estilo para el contenedor de imágenes promocionales */
+#promoImages {
+    border: 1px solid black; /* Borde negro */
+    background-color: white; /* Fondo blanco */
+    border-radius: 10px; /* Bordes redondeados */
+    margin: 10px; /* Margen alrededor */
+    padding: 5px; /* Espaciado interno de 5px */
+    width: 405px; /* Ancho del contenedor 5px mayor que las imágenes */
+    float: left; /* Flota a la izquierda */
+}
+
+/* Estilo para las imágenes dentro de #promoImages */
+#promoImages > img {
+    width: 400px; /* Ancho de la imagen */
+    height: 242px; /* Altura de la imagen */
+    display: block; /* Hacer que la imagen se comporte como bloque */
+    margin: 0 auto; /* Centra la imagen dentro del contenedor */
+}
+
+/* Estilo cuando se pasa el cursor sobre el contenedor #pageDescription */
+#pageDescription:hover {
+    background-color: #f0f0f0; /* Cambio del color de fondo a gris claro */
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5); /* Sombra más grande y difusa */
+}
+
+/* Estilo cuando se pasa el cursor sobre el contenedor #promoImages */
+#promoImages:hover {
+    background-color: #f0f0f0; /* Cambio de fondo a gris claro al hacer hover */
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5); /* Sombra más grande y difusa */
+}
+
+/* Estilo para los párrafos dentro de #pageDescription */
+#pageDescription > p {
+    margin: 40px; /* Espaciado alrededor de los párrafos */
+}
+
+/* Fondo de la página usando una imagen */
+body {
+    background-image: url("../img/background.jpg"); /* Imagen de fondo */
+}
+
+/* Estilos para la lista principal */
+ul {
+    list-style-type: square; /* Estilo de viñeta cuadrada */
+    margin: 20px 0; /* Margen vertical de 20px */
+    padding-left: 20px; /* Sangría interna para alinear los elementos */
+    font-size: 16px; /* Tamaño de la fuente de 16px */
+}
+
+/* Estilos para las sublistas */
+ul ul {
+    list-style-type: circle; /* Estilo de viñeta circular para las sublistas */
+    padding-left: 20px; /* Sangría adicional para las sublistas */
+}
+
+/* Estilo para los elementos individuales de la lista (<li>) */
+li {
+    margin-bottom: 10px; /* Espacio inferior de 10px entre cada elemento */
+}
+
+#mainPage{
+    width: 50%;
+    margin: auto;
+    margin-left: 15%;
+}

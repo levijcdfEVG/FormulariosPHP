@@ -1,0 +1,19 @@
+/* Clase para hacer el texto más grueso o negrita */
+.bold {
+    font-weight: bolder; /* Aplica un peso de fuente más grueso que 'bold' */
+}
+
+/* Clase para hacer que el texto se muestre en cursiva */
+.italic {
+    font-style: italic; /* Estilo de fuente cursiva */
+}
+
+/* Clase para subrayar el texto */
+.underline {
+    text-decoration: underline; /* Subraya el texto */
+}
+
+/* Clase para resaltar el texto con un fondo amarillo */
+.highlight {
+    background-color: yellow; /* Aplica un color de fondo amarillo al texto */
+}
