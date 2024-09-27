@@ -15,20 +15,11 @@
        <main>
             <h1>Datos Recolectados</h1>
             <?php
-                $numeroDeDatos = 0;
-                //Mediante el array $_GET, que guarda las informaciones del formulario que han sido enviadas via URL, se envian a la pagina con la instruccion ECHO como html
-                echo "<p>IBAN: ".$_GET['iban']."</p>";
-                echo "<p>Nombre: ".$_GET['clientName']."</p>";
-                echo "<p>Cantidad: ".$_GET['amount']."</p>";
-                echo "<p>Moneda: ".$_GET['currency']."</p>";
-                echo "<p>Metodo de pago: ".$_GET['paymentMethod']."</p>";
-                echo "<p>Correo Electrónico: ".$_GET['email']."</p>";
-                if(isset($_GET['newsletter']))
-                    echo "<p>Se ha suscrito al periodico</p>";
-                if(isset($_GET['terms']))
-                    echo "<p>Ha aceptado los terminos</p>";
-
                 
+                
+                displayFormData($_GET); //Mediante el array $_GET, que guarda las informaciones del formulario que han sido enviadas via URL, se envian a la pagina con la instruccion ECHO como html
+                $contadorDatos = contador($_GET); //Llama el algoritmo del contador para poder devolver el numero de datos
+                echo "<p>El numero de datos enviados es: ".$contadorDatos."</p>";
             ?>
        </main>
    </body>
