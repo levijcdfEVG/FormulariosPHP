@@ -14,6 +14,20 @@
             <p>(todas van para mi)</p>
             <form action="mostrar.php" method="GET">
                 <fieldset>
+                     <!-- CheckBox -->
+                     <label>Quiero direccionar mis donativos a:</label><br/>
+                     <label>
+                        <input type="checkbox" name="desastresDonate[]"> Tsunami
+                    </label><br>
+                    <label>
+                        <input type="checkbox" name="desastresDonate[]"> Terremotos
+                    </label><br>
+                    <label>
+                        <input type="checkbox" name="desastresDonate[]"> Incendios
+                    </label><br>
+                    <label>
+                        <input type="checkbox" name="desastresDonate[]"> Tifones
+                    </label><br>
                     <!-- Campo para el IBAN -->
                     <input type="text" name="iban" placeholder="IBAN"/>
                     <!-- Campo para el nombre del cliente -->
@@ -34,16 +48,19 @@
                     <label><input type="radio" name="paymentMethod" value="PayPal"> PayPal<br></label>
                     <!-- Campo para la dirección de correo electrónico -->
                     <input type="email" name="email" placeholder="Correo electrónico"/>
+                    
                     <!-- Checkbox para suscribirse a boletines -->
                     <label>
                         <input type="checkbox" name="newsletter"> Deseo recibir correos de la ONG
                     </label><br>
+
                     <!-- Checkbox de aceptación de términos -->
                     <label>
                         <input type="checkbox" name="terms"> Acepto los términos y condiciones
                     </label><br>
                     <!-- Botón de envío -->
                     <input type="submit" value="Enviar" id="submitButton"/>
+                   
                 </fieldset>
             </form>
        </main>
