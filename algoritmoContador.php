@@ -49,12 +49,12 @@
         }
 
         
-        if (!empty($data['newsletter'])) {
+        if (isset($data['newsletter'])) {
             echo "<p>Se ha suscrito al periódico</p>";
         }
 
         
-        if (!empty($data['terms'])) {
+        if (isset($data['terms'])) {
             echo "<p>Ha aceptado los términos</p>";
         }
     }
