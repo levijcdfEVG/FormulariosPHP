@@ -1,13 +1,18 @@
 /* Estilo principal para el elemento <main> */
 main {
     width: 50%; /* El ancho de la sección <main> ocupa el 50% del contenedor principal */
-    margin: 50px auto; /* Centra el <main> horizontalmente y ajusta la separación desde la parte superior de la página */
-    background-color: antiquewhite; /* Fondo crema para el contenido */
+    height: auto; /* La altura se ajusta automáticamente al contenido */
+    position: fixed; /* La posición se fija respecto a la ventana del navegador */
+    top: 50%; /* Posiciona la esquina superior del <main> al 50% de la altura de la ventana */
+    left: 50%; /* Posiciona la esquina izquierda del <main> al 50% del ancho de la ventana */
+    transform: translate(-50%, -50%); /* Mueve el <main> hacia arriba e izquierda un 50% de su propio tamaño para centrarlo completamente */
+    background-color: antiquewhite; /* Fondo color crema para el contenido */
     border: 1px solid black; /* Borde negro de 1px alrededor del <main> */
     border-radius: 10px; /* Bordes redondeados con un radio de 10px */
     box-shadow: 1px 1px black; /* Sombra ligera de 1px en ambas direcciones para dar profundidad */
     padding: 50px; /* Espacio interno (relleno) de 50px alrededor del contenido dentro de <main> */
 }
+
 /* Estilo para el título <h1> dentro del <main> */
 main > h1 {
     text-align: center; /* Alinea el texto del título en el centro */
