@@ -1,3 +1,7 @@
+body{
+    background-image: url("/img/background.jpeg");
+}
+
 /* Estilo principal para el elemento <main> */
 main {
     width: 50%; /* El ancho de la sección <main> ocupa el 50% del contenedor principal */
