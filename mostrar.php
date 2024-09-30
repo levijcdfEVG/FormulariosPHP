@@ -1,5 +1,5 @@
 <?php 
-    include 'algoritmoContador.php';
+    require 'algoritmoContador.php';
 ?>
 <!DOCTYPE html>
 <html lang="es">
@@ -15,8 +15,6 @@
        <main>
             <h1>Datos Recolectados</h1>
             <?php
-                
-                
                 displayFormData($_GET); //Mediante el array $_GET, que guarda las informaciones del formulario que han sido enviadas via URL, se envian a la pagina con la instruccion ECHO como html
                 $contadorDatos = contador($_GET); //Llama el algoritmo del contador para poder devolver el numero de datos
                 echo "<p>El numero de datos enviados es: ".$contadorDatos."</p>";
