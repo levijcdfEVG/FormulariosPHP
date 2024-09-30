@@ -12,21 +12,21 @@
        <main>
             <h1>Formulario de donaciones</h1>
             <p>(todas van para mi)</p>
-            <form action="mostrar.php" method="GET">
+            <form action="formData.php" method="GET">
                 <fieldset>
                      <!-- CheckBox -->
                      <label>Quiero direccionar mis donativos a:</label><br/>
                      <label>
-                        <input type="checkbox" name="desastresDonate[]"> Tsunami
+                        <input type="checkbox" name="desastresDonate[]" value="Tsunami"> Tsunami
                     </label><br>
                     <label>
-                        <input type="checkbox" name="desastresDonate[]"> Terremotos
+                        <input type="checkbox" name="desastresDonate[]" value="Terremotos"> Terremotos
                     </label><br>
                     <label>
-                        <input type="checkbox" name="desastresDonate[]"> Incendios
+                        <input type="checkbox" name="desastresDonate[]" value="Incendios"> Incendios
                     </label><br>
                     <label>
-                        <input type="checkbox" name="desastresDonate[]"> Tifones
+                        <input type="checkbox" name="desastresDonate[]" value="Tifones"> Tifones
                     </label><br>
                     <!-- Campo para el IBAN -->
                     <input type="text" name="iban" placeholder="IBAN"/>
