@@ -39,3 +39,11 @@ fieldset > input, fieldset > select {
 #submitButton {
     background-color: tomato; /* Color de fondo del botón de envío en tono rojo tomate */
 }
+
+ul{
+    list-style: circle;
+}
+
+ul > li{
+    color: blue;
+}
