@@ -60,11 +60,11 @@
 
         // Se crea un array a partir de la celda del array asociativo _GET que contiene las informaciones del formulário
         $donateTarget = $data['desastresDonate'];
-        if (isset($donateTarget)) {
+        if (!empty($donateTarget)) {
             echo "<p>El quiere apoyar a las víctimas de:</p>";
             echo "<ul>"; // Abrir lista no ordenada
             foreach ($donateTarget as $key => $item) {
-                echo "<li>" .$item. "</li>"; // Crear cada elemento de la lista
+                echo "<li>" . htmlspecialchars($item) . "</li>"; // Crear cada elemento de la lista
             }
             echo "</ul>"; // Cerrar lista no ordenada
         } else {
