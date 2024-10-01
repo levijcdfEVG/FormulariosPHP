@@ -1,6 +1,6 @@
 <?php 
 
-    // Función que cuenta el número de valores no vacíos en el array $datosCLiente
+    // Función que cuenta el número de valores no vacíos en el array $datosCLiente (opcional)
     function contador($datosCLiente){
         $numeroDeDatos = 0; // Inicializa el contador
         
@@ -60,7 +60,7 @@
 
         // Se crea un array a partir de la celda del array asociativo _GET que contiene las informaciones del formulário
         $donateTarget = $data['desastresDonate'];
-        if (isset($donateTarget)) {
+        if (!empty($donateTarget)) {
             echo "<p>El quiere apoyar a las víctimas de:</p>";
             echo "<ul>"; // Abrir lista no ordenada
             foreach ($donateTarget as $key => $item) {
