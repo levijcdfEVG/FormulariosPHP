@@ -61,14 +61,14 @@
         // Se crea un array a partir de la celda del array asociativo _GET que contiene las informaciones del formulário
         $donateTarget = $data['desastresDonate'];
         if (isset($donateTarget)) {
-            echo "<p>El quiere apoyar a las víctimas de:</p>";
+            echo "<p>El cliente quiere apoyar a las víctimas de:</p>";
             echo "<ul>"; // Abrir lista no ordenada
             foreach ($donateTarget as $key => $item) {
-                echo "<li>" . htmlspecialchars($item) . "</li>"; // Crear cada elemento de la lista
+                echo "<li>" . $item . "</li>"; // Crear cada elemento de la lista
             }
             echo "</ul>"; // Cerrar lista no ordenada
         } else {
-            echo "<p>No se seleccionaron opciones.</p>";
+            echo "<p>No se seleccionaron opciones de especificación.</p>";
         }
         //Nota: Me he fijado que si no se pone valor en los elementos del array, se mostrará "on"
        
